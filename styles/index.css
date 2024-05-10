@@ -2,12 +2,32 @@
 
 .products {
   display: grid;
-  grid-template-columns: 1fr 300px;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
   align-items: center;
+  border-radius: 10px;
+  margin: 10px 25px 10px 25px;
+}
+
+.single-product {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 5px;
 }
 
 .products img {
-  height: 300px;
-  width: 600px;
+  height: 250px;
+}
+
+.game-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.game-data button {
+  margin-top: 15px;
 }
