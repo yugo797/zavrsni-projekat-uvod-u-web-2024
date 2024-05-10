@@ -1,22 +1,23 @@
 /*main content*/
 
 .products {
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+  column-gap: 20px;
+  row-gap: 30px;
   align-items: center;
   border-radius: 10px;
-  margin: 10px 25px 10px 25px;
+  margin: 10px 45px 10px 80px;
 }
 
 .single-product {
-  width: 400px;
+  width: 325px;
   display: flex;
   flex-direction: column;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  padding: 5px;
 }
 
 .products img {
@@ -28,6 +29,16 @@
   flex-direction: column;
   justify-content: space-around;
 }
+.game-data h3 {
+  align-self: center;
+}
+.game-data span {
+  align-self: center;
+}
 .game-data button {
   margin-top: 15px;
+  margin-bottom: 10px;
+  width: 75%;
+  height: 30px;
+  align-self: center;
 }
