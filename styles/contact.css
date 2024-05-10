@@ -1,20 +1,26 @@
-*{
-    box-sizing: border-box;
+body {
+    display: flex;
+    background-image: url("/images/contanctB.jpg");
+    background-size:cover;
+    flex-direction: column;
+    justify-content: left;
     margin: 0;
-    padding: 0;
     
-
-}
+  }
+  
+  #title-Tag-Line {
+    font-size: 20px;
+  }
 
 .navbar {
-    background: #131313;
-   /* height: 150px;*/
+    background: rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
     position: sticky;
     color: #fff;
+    margin: 0;
 }
 
 .navbar__links{
@@ -44,23 +50,106 @@
     transition: 0.3s all ease;
     font-size: 5rem;
 }
+/*Contact*/
+
+.form {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    background-color: rgba(93, 6, 45, 0.8) ;
+    border-radius: 5px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  .title{
+    display: block;
+    margin: 10px auto 5px;
+    width: 300px;
+  }
+  
+  .pageTitle{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .name {
+    background-color: #ebebeb;
+    color: white;
+    width: 350px;
+    height: 2rem;
+    font-size: 1rem;
+  }
+  
+  .email {
+    background-color: #ebebeb;
+    height: 2rem;
+    width: 350px;
+    font-size: 1rem;
+  }
+  
+  .message {
+    background-color: #ebebeb;
+    overflow: hidden;
+    height: 10rem;
+    width: 350px;
+    font-size: .9rem;
+  }
+  
+  .formEntry {
+    display: flex;
+    margin: 20px auto;
+    width: 300px;
+    border: none;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    height: 400px;
+  }
+  
+  .submit {
+    align-items: center;
+    font-weight: bold;
+    width: 150px;
+    height: 35px;
+    color: white;
+    background-color: rgb(132, 2, 60);
+    font-size: 20px;
+  }
+  
+  .submit:hover {
+    
+    transition: all ease 0.3s;
+    background-color:rgb(190, 106, 4);
+    cursor: pointer;
+  }
+  
+  
+
+
+
 
 
 /*Footer*/
 
 footer{
-    background-color: #141414;
+    background: rgba(15, 15, 15, 0.5);
     color: #fff;
+    
 }
 
 .footer__container{
-    background-color: #141414;
+    margin: 0;
     padding: 2rem 1rem;
     display: flex;
     flex-direction:row ;
     color: #fff;
-    align-items: stretch;
-    justify-content: space-evenly;
+    align-items:normal;
+    justify-content:space-between;
     
 }
 .footer a{
@@ -77,13 +166,19 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content:center;
+    color: forestgreen;
     font-size: 1.2rem;
 
 }
 .footer__link--items{
     font-size: 1.5rem;
     padding-top: none;
-    padding-right: .5rem;
+    padding-right: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    
     
 }
 
@@ -92,8 +187,8 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #fff;
-    font-size: 1.5rem;
+    color: #f5f0f0;
+    font-size: 1.2rem;
 
 }
 
@@ -101,9 +196,10 @@ footer{
    
     display: flex;
     color: aqua;
-    gap: 10px;
     font-size: 2rem;
     margin-right: 2rem;
+    gap: 15px;
+    
 }
 
 .footer__social--links i:hover{
@@ -111,6 +207,8 @@ footer{
     transition: ease .3s;
     cursor: pointer;
 }
+
+
 
 
 
