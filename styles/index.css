@@ -11,7 +11,25 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+/*search*/
 
+input[type="text"] {
+  width: 75%;
+  margin-left: 120px;
+  margin-bottom: 30px;
+  float: center;
+  padding: 6px;
+  border: 3px solid #10e8a7;
+  background-color: rgba(0, 0, 0, 0.212);
+  font-size: 17px;
+  color: azure;
+}
+.srcBtn {
+  height: 33px;
+  width: 5%;
+  margin-left: -4px;
+  margin-bottom: 35px;
+}
 /*main content*/
 
 .products {
@@ -40,7 +58,7 @@ body {
 }
 
 .products img {
-  height: 250px;
+  height: 150px;
 }
 
 .game-data {
