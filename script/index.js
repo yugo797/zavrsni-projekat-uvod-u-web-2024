@@ -15,7 +15,7 @@ function generateCard(id, thumbnail, name, price) {
         <div class="game-data">
             <h3>${name}</h3>
             <span>${price}$</span>
-            <button>Read More</button>
+            <button class="modalWind">Read More</button>
         </div>
         </div>`;
 }

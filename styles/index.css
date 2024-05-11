@@ -11,6 +11,44 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+
+/*header*/
+
+.headrer {
+  overflow: hidden;
+  background: rgba(15, 15, 15, 0.5);
+  height: 100px;
+  margin: 0 0 35px 0;
+  display: flex;
+  justify-content: space-around;
+}
+.headrer img {
+  height: 100px;
+  margin-left: -225px;
+}
+.headrer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(12, 206, 232);
+}
+
+.headrer a:hover {
+  text-shadow: 10px rgb(12, 206, 232);
+  color: rgb(39, 39, 39);
+}
+
+.headrer ul {
+  margin-right: -225px;
+  list-style: none;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.headrer ul li {
+  margin: 20px 10px 0 10px;
+}
+
 /*search*/
 
 input[type="text"] {
@@ -19,7 +57,7 @@ input[type="text"] {
   margin-bottom: 30px;
   float: center;
   padding: 6px;
-  border: 3px solid #10e8a7;
+  border: 3px solid rgb(12, 206, 232);
   background-color: rgba(0, 0, 0, 0.212);
   font-size: 17px;
   color: azure;
@@ -48,12 +86,14 @@ input[type="text"] {
   margin-bottom: 27px;
   display: flex;
   flex-direction: column;
-  border: 3px solid #10e8a7;
+  border: 3px solid rgb(12, 206, 232);
+  /*#10e8a7;*/
   border-radius: 20px;
   top: 150px;
   overflow: hidden;
   left: 50%;
-  box-shadow: rgba(129, 255, 146, 0.3) 5px 8px 18px 8px;
+  box-shadow: rgba(12, 206, 232, 0.3) 5px 8px 18px 8px;
+  /*rgba(129, 255, 146, 0.3) 5px 8px 18px 8px;*/
   background-color: rgb(102, 102, 102);
 }
 
@@ -79,7 +119,8 @@ input[type="text"] {
   height: 30px;
   width: 75%;
   align-self: center;
-  background-color: #10e8a7;
+  background-color: rgb(12, 206, 232);
+  /* #10e8a7;*/
   border-radius: 10px;
 }
 
@@ -105,10 +146,10 @@ input[type="text"] {
 
 .loadMoreProducts:hover {
   cursor: pointer;
-  color: #10e8a7;
-  border: 2px solid #10e8a7;
+  color: rgb(12, 206, 232);
+  border: 2px solid rgb(12, 206, 232);
   border-radius: 25px;
-  box-shadow: rgba(129, 255, 146, 0.3) 5px 8px 18px 8px;
+  box-shadow: rgba(12, 206, 232, 0.3) 5px 8px 18px 8px;
 }
 
 /*footer*/
