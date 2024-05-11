@@ -15,11 +15,12 @@ body {
   row-gap: 30px;
   align-items: center;
   border-radius: 10px;
-  margin: 10px 45px 10px 80px;
+  margin: 10px 45px 80px 118px;
 }
 
 .single-product {
   width: 325px;
+  margin-bottom: 27px;
   display: flex;
   flex-direction: column;
   border: 3px solid #10e8a7;
