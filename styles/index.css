@@ -3,6 +3,13 @@
 body {
   background-color: rgb(39, 39, 39);
   margin: 0;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /*main content*/
@@ -63,6 +70,27 @@ body {
   background-color: rgb(62, 55, 100);
   cursor: pointer;
   color: azure;
+}
+
+.loadMoreProducts {
+  margin-top: 5px;
+  margin-bottom: 25px;
+  width: 18%;
+  font-weight: bold;
+  height: 80px;
+  align-self: center;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 25px;
+}
+
+.loadMoreProducts:hover {
+  cursor: pointer;
+  color: #10e8a7;
+  border: 2px solid #10e8a7;
+  border-radius: 25px;
+  box-shadow: rgba(129, 255, 146, 0.3) 5px 8px 18px 8px;
 }
 
 /*footer*/
