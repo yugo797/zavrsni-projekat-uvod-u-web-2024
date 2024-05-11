@@ -21,9 +21,12 @@ body {
   width: 325px;
   display: flex;
   flex-direction: column;
+  border: 3px solid #10e8a7;
   border-radius: 20px;
+  top: 150px;
   overflow: hidden;
-  box-shadow: rgba(129, 255, 146, 0.3) 5px 18px 24px 8px;
+  left: 50%;
+  box-shadow: rgba(129, 255, 146, 0.3) 5px 8px 18px 8px;
   background-color: rgb(102, 102, 102);
 }
 
@@ -45,7 +48,17 @@ body {
 .game-data button {
   margin-top: 15px;
   margin-bottom: 10px;
-  width: 75%;
+  font-weight: bold;
   height: 30px;
+  width: 75%;
   align-self: center;
+  background-color: #10e8a7;
+  border-radius: 10px;
+}
+
+.game-data button:hover {
+  transition: all ease 0.3s;
+  background-color: rgb(62, 55, 100);
+  cursor: pointer;
+  color: azure;
 }
