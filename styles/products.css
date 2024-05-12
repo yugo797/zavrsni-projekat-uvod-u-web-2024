@@ -1,48 +1,42 @@
 #title-Tag-Line {
   font-size: 20px;
 }
-
-.navbar {
-  background: rgba(0, 0, 0, 0.3);
+.headrer {
+  overflow: hidden;
+  background: rgba(15, 15, 15, 0.5);
+  height: 100px;
+  margin: 0 0 35px 0;
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  position: sticky;
-  color: #fff;
-  margin: 0;
-  width: 1519px;
-  margin: 0;
-  padding: 0;
+  justify-content: space-around;
 }
-
-.navbar__links{
-  list-style: none;
+.headrer img {
+  height: 100px;
+  margin-left: -225px;
 }
-.navbar a {
+.headrer a {
   text-decoration: none;
-  color: #fff ;
+  font-weight: bold;
+  color: rgb(12, 206, 232);
+}
+
+.headrer a:hover {
+  text-shadow: 10px rgb(12, 206, 232);
+  color: rgb(237, 233, 233);
+}
+
+.headrer ul {
+  margin-right: -225px;
+  list-style: none;
+  font-size: 20px;
   display: flex;
-  align-items: flex-start ;
-  justify-content: center;
-  padding:  0.1rem;
-  height: 100%;
-
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.headrer ul li {
+  margin: 20px 10px 0 10px;
 }
 
-#navbar__logo{
-  align-items: end;
-  justify-content: left;
-  align-items: left;
-  color:aquamarine ;
-  border: none;
-  padding: 1rem;
-}
-.navbar a:hover{
-  color: lightcyan;
-  transition: 0.3s all ease;
-  font-size: 5rem;
-}
 /*  */
 
 body {
@@ -52,15 +46,13 @@ body {
   flex-direction: column;
   align-items:center;
   justify-content: space-between;
-  /* min-height: 100vh; */
   background: #131313;
 }
 
-.container {
-  margin-top: 123px;
-  margin-bottom: 123px;
+.center {
+  margin-top: 5px;
+  margin-bottom: 5px;
   max-width: 1200px;
-  /* height: 550px; */
   width: 95%;
   align-items: center;
   
@@ -91,7 +83,7 @@ body {
 }
 
 .slider-wrapper .slide-button:hover {
-  background: #ffffff;
+  background: #3a3a3a;
 }
 
 .slider-wrapper .slide-button#prev-slide {
@@ -120,10 +112,10 @@ body {
 
 .slider-wrapper .image-list .image-item {
   width: 400px;
-  height: auto;
+  height: 600px;
   object-fit: cover;
 }
-
+/* 
 .container .slider-scrollbar {
   height: 24px;
   width: 100%;
@@ -169,7 +161,8 @@ body {
   right: 0;
   top: -10px;
   bottom: -10px;
-}
+} */
+/* test */
 
 
 /* footer */

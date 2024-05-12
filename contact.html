@@ -30,12 +30,17 @@
             <input type="text" class="name " placeholder="Name" />
             <input type="text" class="email " placeholder="Email"/>
             <textarea class="message " placeholder="Message"></textarea>
-            <button class="submit" onclick="thanks()" >Submit</button>
+            <button class="submit"  >Submit</button>
           </div>
           
         </form>
       </div>
 
+    <div class="modal hidden">
+        <button class="close__modal">&times;</button>
+        <h2 id="modal__title">Thank you!</h2>
+        <p id="modal__message">Successfully sent a message!</p>
+    </div>
 
     <footer class="footer">
         <div class="footer__container">
@@ -67,9 +72,10 @@
            
         </div>
         <p class="copyright" >&copy; 2021 Gaming-Room all rights reserved</p>
+        
        
     </footer>
-    <script src="/scripts/contact.js"></script>
+    <script src="/script/contact.js"></script>
     <script src="https://kit.fontawesome.com/faf2c74ab8.js" crossorigin="anonymous"></script>
 </body>
 </html>
