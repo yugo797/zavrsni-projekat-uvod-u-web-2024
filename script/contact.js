@@ -1,14 +1,14 @@
 "use strict";
 
-const submitBtn = document.querySelector(".submit");
-const modal = document.querySelector(".modal");
-const btnCloseModal = document.querySelector(".close__modal");
-const nameField = document.querySelector(".name");
-const emailField = document.querySelector(".email");
-const messageField = document.querySelector(".message");
-const modalTitle = document.querySelector("#modal__title");
-const modalMessage = document.querySelector("#modal__message");
 const myForm = document.getElementById("myForm");
+const modal = document.querySelector(".modal");
+const closeButton = document.querySelector(".close__modal");
+const subButton = document.querySelector(".submit");
+const mName = document.querySelector(".name");
+const email = document.querySelector(".email");
+const messageField = document.querySelector(".message");
+const title = document.querySelector("#modal__title");
+const message = document.querySelector("#modal__message");
 var check = false;
 
 const closeModal = () => {
@@ -23,22 +23,22 @@ const closeModal = () => {
 
 const openModal = (event) => {
     modal.classList.remove("hidden");
-    console.log(nameField.value, emailField.value, messageField.value);
-    if (nameField.value==="" || emailField.value==="" || messageField.value==="") {
-        modalTitle.innerHTML="Error!";
-        modalMessage.innerHTML="Please fill in all the fields.";
+    console.log(mName.value, email.value, messageField.value);
+    if (mName.value==="" || email.value==="" || messageField.value==="") {
+        title.innerHTML="Warning!";
+        message.innerHTML="Incorrect form";
     }
-    else if (nameField.value!=="" && emailField.value!=="" && messageField.value!==""){
-        modalTitle.innerHTML="Thank you!";
-        modalMessage.innerHTML="Successfully sent a message!";
+    else if (mName.value!=="" && email.value!=="" && messageField.value!==""){
+        title.innerHTML="Success!";
+        message.innerHTML="Message sent!";
         check=true;
     }
     event.preventDefault();
 };
 
-submitBtn.addEventListener("click", openModal);
+subButton.addEventListener("click", openModal);
 
-btnCloseModal.addEventListener("click", closeModal);
+closeButton.addEventListener("click", closeModal);
 
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && !modal.classList.contains("hidden")) {
