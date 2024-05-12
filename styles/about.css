@@ -56,8 +56,6 @@ body {
   min-height: calc(100vh - 300px);
 }
 
-/* About Section */
-
 .about {
   text-align: center;
 }
@@ -69,12 +67,14 @@ body {
 .about h1 {
   font-size: 1.8rem;
   margin-bottom: 20px;
+  color: white;
 }
 
 .about p {
   font-size: 1rem;
   max-width: 800px;
   margin: 0 auto;
+  color: white;
 }
 
 .about-info {
@@ -114,22 +114,27 @@ body {
 }
 
 .about-info .contact-us {
+  text-decoration: none;
   font-size: 18px;
   padding: 12px 24px;
-  background-color: #a69991;
-  border: 1px solid #472f1d;
-  color: #472f1d;
+  /*VOJFOHEGFVHBDEJKJFWIOFBHDFVHSKBVH*/
+  color: #fff;
+  background-color: rgb(12, 206, 232);
+  color: #000000;
   border-radius: 50px;
   cursor: pointer;
 }
 
 .about-info .contact-us:hover {
-  background-color: #472f1d;
-  border: 1px solid #a69991;
-  color: #a69991;
+  cursor: pointer;
+  background-color: rgb(39, 39, 39);
+  color: white;
+  border: 2px solid rgb(12, 206, 232);
+  border-radius: 25px;
+  box-shadow: rgba(12, 206, 232, 0.3) 5px 8px 18px 8px;
 }
 
-/* Team Section */
+/*team cards*/
 
 .team {
   padding: 100px 50px;
@@ -137,6 +142,7 @@ body {
 }
 
 .team h1 {
+  color: white;
   font-size: 1.8rem;
   margin-bottom: 20px;
 }
@@ -151,7 +157,7 @@ body {
 
 .card {
   border-radius: 6px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 6px rgba(12, 206, 232, 0.7);
   transition: 0.5s;
   padding: 20px 26px;
 }
@@ -162,23 +168,25 @@ body {
 
 .card-img {
   border-radius: 100%;
-  border: 3px solid #4d4d4e;
+  border: 3px solid rgb(12, 206, 232);
   width: 10rem;
 }
 
 .card-name {
+  color: white;
   font-size: 1.2rem;
   margin: 10px 0;
 }
 
 .card-role {
+  color: white;
   font-size: 0.9rem;
   margin: 5px 0;
 }
 
 .card-email {
   font-size: 1rem;
-  color: #4d4d4e62;
+  color: #ffffff;
 }
 /*footer*/
 
